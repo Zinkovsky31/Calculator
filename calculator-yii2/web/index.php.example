@@ -1,0 +1,86 @@
+<?php
+
+include __DIR__. '/classes/User.php';
+include __DIR__. '/classes/UserStatePrintService.php';
+
+
+/*$str = '123';
+$float = 1.2;
+$int = 1;
+$null = NULL;
+$boolean = true;
+$array = [];
+$collable = function (){echo 1;};
+$object = new \stdClass;
+var_dump($str,
+$float,
+$int,
+$null,
+$boolean,
+$array,
+$collable,
+$object);
+
+class User{
+    public $id;
+    public $ussername;
+    public $password;
+    public $accessTokken;
+    public $autKey;
+   
+
+    private static $users = [
+        '1' => [
+            'id' => '100',
+            'username' => 'admin',
+            'password' => 'admin',
+            'authKey' => 'test100key',
+            'accessToken' => '100-token',
+        ],
+        '12' => [
+            'id' => '101',
+            'username' => 'demo',
+            'password' => 'demo',
+            'authKey' => 'test101key',
+            'accessToken' => '101-token',
+        ],
+    ];
+
+}*/
+
+
+/*$useres = [];
+for ($i = 0; $i<10; $i++)
+{
+    $users[] = new User( 'Andrey -' . $i , 'user', 22 +$i);
+}
+$service = new UserStatePrintService(PHP_EOL);
+$service->printState($users);
+//$user->initId();
+//var_dump($user->getId());
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+// comment out the following two lines when deployed to production
+defined('YII_DEBUG') or define('YII_DEBUG', true);
+defined('YII_ENV') or define('YII_ENV', 'dev');
+
+require __DIR__ . '/../vendor/autoload.php';
+require __DIR__ . '/../vendor/yiisoft/yii2/Yii.php';
+
+$config = require __DIR__ . '/../config/web.php';
+
+(new yii\web\Application($config))->run();
